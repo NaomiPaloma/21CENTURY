@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+@font-face{
+    font-family: Warzone;
+    src: url(./fonts/Warzone.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+#logo{
+   background: url(./images/LOGO_AG_MULTI.png);    
+    width: 180px;
+    height: 180px;
+    text-indent: -1000px;
+    overflow: hidden;
+}
+#logo a{
+    display: block;
+    height: 180px;
+}
+
+#logo a{
+    display: block;
+    height: 180px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color:rgb(240, 215, 182);
+}
+section{
+    font-family: "Quicksand", sans-serif;
+
+}
+#banner{
+        background: linear-gradient(180deg, rgba(49, 49, 49, 0.8) 0%, rgba(36, 18, 18, 0.8) 100%) , url('./images/banner_celu.jpg') no-repeat;
+        background-size: cover;
+        height: 50vh;
+        padding: 2.5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+#banner h2{
+        color: white;
+        font-size: 3.2rem;
+        font-weight: 700;
+        font-family: Warzone, sans-serif;
+}
+#banner p{
+    margin-top: 2em;
+    color: white;
+}
+
+#pastillas{
+    text-align: center;
+    padding: 2em;
+}
+
+#pastillas h2 , #aboutus h2{
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+#pastillas div{
+    max-width: 1100px; 
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+#pastillas figure{
+    border: 4px solid rgb(240, 215, 182);
+    padding: 1em;
+    border-radius: 10px;
+    flex-basis: 100%;
+}
+
+#pastillas img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#pastillas h3{
+    border-bottom: 3px solid rgb(240, 215, 182) ;
+}
+#pastillas h3 , #pastillas p{
+    margin: 1em 0;
+    
+}
+#reseñas{
+    text-align: center;
+    padding: 0em 2em 2em 2em;
+}
+
+#reseñas h2 , #aboutus h2{
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin: 0em 2em 2em 2em;
+}
+
+#reseñas div{
+    max-width: 1100px; 
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+#reseñas figure{
+    border: 4px solid rgb(240, 215, 182);
+    padding: 1em;
+    border-radius: 10px;
+    flex-basis: 100%;
+}
+
+#reseñas img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#reseñas h3{
+    border-bottom: 3px solid rgb(240, 215, 182) ;
+}
+#reseñas h3 , #pastillas p{
+    margin: 1em 0;
+    
+}
+
+.oculto{
+    display: none;
+}
+figcaption:target .oculto {
+    display: block;
+}
+figcaption:target .mas {
+    display: none;
+}
+
+footer{
+    background-color: black;
+    padding: 2em;
+    color: white;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    font-family: "Quicksand", sans-serif;
+}
+footer p{
+    padding: 8px;
+    margin: 10px auto;
+}
+
+footer ul{
+    display: flex;
+    gap: 10px;
+}
+
+footer ul li{
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: rgb(240, 215, 182);
+}
+@media screen and (min-width:600px){
+    header{
+
+        flex-direction: row;
+    }
+    #banner{
+        background: linear-gradient(180deg, rgba(71,71,71,0.8) 0%, rgba(133,87,87,0.6) 100%) , url('./images/banner.jpg') no-repeat ;
+        text-align: left;
+    }
+    #banner h2{
+        font-size: 5rem;
+    }
+    #pastillas div{
+        flex-direction: row;
+        justify-content: center;
+    }
+    #pastillas figure{
+        flex-basis: 40%;
+    }
+    #reseñas div{
+        flex-direction: row;
+        justify-content: center;
+    }
+    #reseñas figure{
+        flex-basis: 40%;
+    }
+    footer div{
+            display: flex;
+            flex-direction: row;
+            vertical-align: baseline;
+    }
+}
+@media screen and (min-width:1200px){
+    #banner{
+        background: linear-gradient(180deg, rgba(71,71,71,0.8) 0%, rgba(133,87,87,0.6) 100%) , url('./images/banner\ pc.jpg') no-repeat ;
+    }
+    #pastillas div{
+        justify-content: space-between
+    }
+    #pastillas figure{
+        flex-basis: 23%;
+    }
+    #reseñas div{
+        flex-wrap: nowrap;
+    }
+    
+}
